@@ -81,7 +81,7 @@ class tkinter_window():
         try:
             for nummer, paragraf in enumerate(self.start_info):
                 self.inhold = paragraf.find('p')
-                self.hele_text += self.inhold.text.strip()
+                self.hele_text += "  "+self.inhold.text.strip()+"\n"
         except: pass
         self.text_box = Text(self.root, height=27, width=70)
         self.text_box.place(x=10,y=100)
